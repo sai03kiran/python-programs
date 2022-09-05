@@ -6,6 +6,7 @@ d=int(input())
 e=int(input())
 tot=a+b+c+d+e
 avg=tot/5
+print("The average marks:",avg)
 if avg>=91 and avg<=100:
     print("Your Grade is A1")
 elif avg>=81 and avg<91:
