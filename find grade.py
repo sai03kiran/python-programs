@@ -18,6 +18,6 @@ elif avg>=61 and avg<71:
 elif avg>=51 and avg<61:
     print("Your Grade is C")
 elif avg>=0 and avg<51:
-    print("Your Grade is fail") 
+    print("Your Grade is F") 
 else:
     print("Invalid Input!")
