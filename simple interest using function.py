@@ -1,7 +1,7 @@
-def simple_interest(p,t,r):
-    print("enter the personal amount",p)
-    print("enter the time period",t)
-    print("enter the rate of interest",r)
+def simple_interest():
+    p=int(input("enter the personal amount:"))
+    t=int(input("enter the time period:"))
+    r=int(input("enter the rate of interest:"))
     a=(p*t*r)/100
     print(a)
-simple_interest(8000,3,12)
+simple_interest()
