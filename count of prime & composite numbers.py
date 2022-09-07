@@ -1,5 +1,5 @@
 a=[]
-b=int(input("Enter the number of elements"))
+b=int(input("Enter the number of elements:"))
 try:
     for i in range(b):
         d=int(input("enter the number:"))
