@@ -1,15 +1,22 @@
-a=int(input("Enter any number:"))
-p=0
-c=0
-if(a==0 or a==1):
-    print("0 and 1 are neither prime nor composite")
-elif(a<0):
-    print("Invalid input")
-elif(a>=2):
-    for i in range(2,a+1):
-        if(i%2!=0):
-            p+=1
+a=[]
+b=int(input("Enter the number of elements"))
+try:
+    for i in range(b):
+        d=int(input("enter the number:"))
+        if(d<0):
+            print("Enter the positive number:")
         else:
-            c+=1
-print("count of prime numbers:",p)
-print("count of composite numbers:",c)
+            a.append(d)
+    p=0
+    c=0
+    for i in a:
+        for j in range(2,i):
+            if(i%j==0):
+                c=c+1
+                break
+            else:
+                p=p+1
+    print("composite",c)
+    print("Prime",p)
+except ValueError:
+    print("enter the input as positive integer value")
