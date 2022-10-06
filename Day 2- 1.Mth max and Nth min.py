@@ -8,25 +8,19 @@ final_list = []
 M=int(input("enter the Mth max in list:"))
  
 for i in range(0, M):
-    max1 = 0
-         
-    for j in range(len(list1)):    
-        if list1[j] > max1:
-            max1 = list1[j];
-                 
-    list1.remove(max1);
-    final_list.append(max1)
+    j=max(list1)             
+    list1.remove(j);
+    final_list.append(j)
     a=min(final_list)  
 
 final_list2 = []
 N=int(input("enter the Nth min in list:"))
  
 for i in range(0, N):
-    k=min(list1)
-                 
+    k=min(list1)              
     list1.remove(k);
     final_list2.append(k)
     b=max(final_list2)  
-print("the sum",a+b)
-print("the diff",a-b)
+print("Sum=",a+b)
+print("Difference=",a-b)
 
