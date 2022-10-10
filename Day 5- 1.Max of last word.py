@@ -1,13 +1,7 @@
-string=input("enter the string")
-def length(string):
-    count=0
-    flag=False
-    length=len(string)-1
-    while(length!=0):
-        if(string[length]==' '):
-            return count
-        else:
-            count+=1
-        length-=1
-    return count
-print("the length of last word is:",length(string))
+def length(str):
+    lis = list(str.split(" "))
+    return len(lis[-1])
+
+str = input("enter the string:")
+print("The length of last word is",
+      length(str))
